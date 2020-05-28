@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" maxHeight="900.0" maxWidth="1200.0" minHeight="900.0" minWidth="1200.0" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetoimob.view.FXMLCadPJController">
+   <children>
+      <Pane fx:id="pnPrincipal" maxHeight="180.0" maxWidth="1200.0" minHeight="180.0" minWidth="1200.0" prefHeight="180.0" prefWidth="1200.0" style="-fx-background-color: #58595B;">
+         <children>
+            <Label fx:id="lblCadastroPessoaJuridica" layoutX="104.0" layoutY="34.0" text="Cadastro Pessoa Jurídica" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblFecharCadastroPJ" layoutX="1169.0" onMouseClicked="#fecharCadastro" text="X" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="tpCadastroPessoaJuridica" layoutX="100.0" layoutY="100.0" maxHeight="580.0" maxWidth="1000.0" minHeight="580.0" minWidth="1000.0" prefHeight="580.0" prefWidth="1000.0" style="-fx-background-color: WHITE;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <JFXTabPane layoutX="523.0" layoutY="178.0" prefHeight="580.0" prefWidth="1000.0" stylesheets="@fxmlcadpj.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <tabs>
+                <Tab text="Untitled Tab 1">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="100.0" layoutY="718.0" prefHeight="58.0" prefWidth="175.0">
+         <children>
+            <JFXButton fx:id="btnLimpar" layoutX="100.0" layoutY="718.0" prefHeight="59.0" prefWidth="194.0" ripplerFill="WHITE" style="-fx-background-color: orange;" text="LIMPAR" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="925.0" layoutY="718.0" prefHeight="58.0" prefWidth="175.0">
+         <children>
+            <JFXButton fx:id="btnSalvar" layoutX="100.0" layoutY="718.0" prefHeight="59.0" prefWidth="194.0" ripplerFill="WHITE" style="-fx-background-color: red;" text="SALVAR" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

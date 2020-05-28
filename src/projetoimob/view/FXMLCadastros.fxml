@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" maxHeight="798.0" maxWidth="940.0" minHeight="798.0" minWidth="940.0" prefHeight="798.0" prefWidth="940.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetoimob.view.FXMLCadastrosController">
+    <stylesheets>
+        <URL value="@fxmlcadastros.css" />
+    </stylesheets>
+   <children>
+      <GridPane layoutX="120.0" layoutY="49.0" prefHeight="700.0" prefWidth="700.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="465.0" minWidth="10.0" prefWidth="351.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="351.0" minWidth="0.0" prefWidth="349.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnCadPF" mnemonicParsing="false" onAction="#abrirFXMLCadPF" prefHeight="142.0" prefWidth="464.0" text="Clientes Pessoas Físicas">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadIU" mnemonicParsing="false" onAction="#abrirFXMLCadIU" prefHeight="115.0" prefWidth="417.0" text="Imóveis Urbanos" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadCorretores" mnemonicParsing="false" onAction="#abrirFXMLCadCO" prefHeight="170.0" prefWidth="504.0" text="Corretores" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadFuncionarios" mnemonicParsing="false" onAction="#abrirFXMLCadPFFC" prefHeight="198.0" prefWidth="413.0" text="Funcionários" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadLogin" mnemonicParsing="false" onAction="#abrirFXMLCadLogin" prefHeight="130.0" prefWidth="351.0" text="Login" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadBairros" mnemonicParsing="false" onAction="#abrirFXMLCadBairros" prefHeight="177.0" prefWidth="455.0" text="Bairros" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadEstados" mnemonicParsing="false" onAction="#abrirFXMLCadEstados" prefHeight="270.0" prefWidth="385.0" text="Estados" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadPJ" maxHeight="1000.0" minHeight="0.0" mnemonicParsing="false" onAction="#abrirFXMLCadPJ" prefHeight="100.0" prefWidth="374.0" text="Clientes Pessoas Jurídicas" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadIR" mnemonicParsing="false" onAction="#abrirFXMLCadIR" prefHeight="126.0" prefWidth="391.0" text="Imóveis Rurais" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadImobiliarias" mnemonicParsing="false" onAction="#abrirFXMLCadIM" prefHeight="129.0" prefWidth="390.0" text="Imobiliárias" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadPS" mnemonicParsing="false" onAction="#abrirFXMLCadPS" prefHeight="131.0" prefWidth="397.0" text="Prestadores de Serviço" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadLogradouros" mnemonicParsing="false" onAction="#abrirFXMLCadLO" prefHeight="128.0" prefWidth="396.0" text="Logradouros" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadCidades" mnemonicParsing="false" onAction="#abrirFXMLCadCidades" prefHeight="114.0" prefWidth="357.0" text="Cidades" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

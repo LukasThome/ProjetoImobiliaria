@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="798.0" maxWidth="940.0" minHeight="798.0" minWidth="940.0" prefHeight="798.0" prefWidth="940.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="projetoimob.view.FXMLRelatoriosController">
+    <stylesheets>
+        <URL value="@fxmlrelatorios.css" />
+    </stylesheets>
+</AnchorPane>

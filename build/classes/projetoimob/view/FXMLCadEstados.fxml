@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" maxHeight="900.0" maxWidth="1200.0" minHeight="900.0" minWidth="1200.0" prefHeight="900.0" prefWidth="1200.0" stylesheets="@fxmlcadestados.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetoimob.view.FXMLCadEstadosController">
+   <children>
+      <Pane maxHeight="180.0" maxWidth="1200.0" minHeight="180.0" minWidth="1200.0" prefHeight="180.0" prefWidth="1200.0" style="-fx-background-color: #58595B;">
+         <children>
+            <Label fx:id="lblCadastrodeEstados" layoutX="104.0" layoutY="34.0" text="Cadastro de Estados" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblFecharCadEstados" layoutX="1169.0" onMouseClicked="#fecharCadastro" text="X" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="apTableView" layoutX="100.0" layoutY="100.0" maxHeight="580.0" maxWidth="1000.0" minHeight="580.0" minWidth="1000.0" prefHeight="580.0" prefWidth="1000.0" style="-fx-background-color: #2A2A2A;" stylesheets="@fxmlcadestados.css">
+         <children>
+            <TableView fx:id="tbEstados" layoutX="50.0" layoutY="150.0" maxHeight="400.0" maxWidth="900.0" minHeight="400.0" minWidth="900.0" onMouseClicked="#selecionarLinhaViewTable" prefHeight="400.0" prefWidth="900.0">
+              <columns>
+                <TableColumn fx:id="colunaCodigoEstado" prefWidth="273.0" text="Código Estado" />
+                <TableColumn fx:id="colunaNomeEstado" prefWidth="397.0" text="Nome Estado" />
+                <TableColumn fx:id="colunaSiglaEstado" prefWidth="209.0" text="Sigla Estado" />
+              </columns>
+            </TableView>
+            <Pane fx:id="pnCadastroEstados" layoutY="-1.0" prefHeight="145.0" prefWidth="1000.0">
+               <children>
+                  <JFXTextField fx:id="txtSiglaEstado" labelFloat="true" layoutX="737.0" layoutY="24.0" prefHeight="25.0" prefWidth="213.0" promptText="Estados">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtNomeEstado" labelFloat="true" layoutX="384.0" layoutY="24.0" prefHeight="25.0" prefWidth="232.0" promptText="Nome Estado">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtCodigoEstado" editable="false" labelFloat="true" layoutX="54.0" layoutY="26.0" prefHeight="25.0" prefWidth="213.0" promptText="Código Estado">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </Pane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="100.0" layoutY="718.0" prefHeight="58.0" prefWidth="175.0">
+         <children>
+            <JFXButton fx:id="btnLimpar" layoutX="62.0" layoutY="17.0" onAction="#limparDados" prefHeight="58.0" prefWidth="175.0" ripplerFill="WHITE" style="-fx-background-color: orange;" text="LIMPAR" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="925.0" layoutY="718.0" prefHeight="58.0" prefWidth="175.0">
+         <children>
+            <JFXButton fx:id="btnSalvar" layoutX="62.0" layoutY="17.0" onAction="#inserirDadosNoBancoDados" prefHeight="58.0" prefWidth="175.0" ripplerFill="WHITE" style="-fx-background-color: red;" text="INSERIR" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="380.0" layoutY="718.0" prefHeight="58.0" prefWidth="175.0">
+         <children>
+            <JFXButton fx:id="btnDeletar" layoutX="62.0" layoutY="17.0" onAction="#deletarDadosSelecionados" prefHeight="58.0" prefWidth="175.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="DELETAR" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="650.0" layoutY="718.0" prefHeight="58.0" prefWidth="175.0">
+         <children>
+            <JFXButton fx:id="btnAtualizar" layoutX="62.0" layoutY="17.0" onAction="#atualizarDados" prefHeight="58.0" prefWidth="175.0" ripplerFill="WHITE" style="-fx-background-color: blue;" text="ATUALIZAR" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

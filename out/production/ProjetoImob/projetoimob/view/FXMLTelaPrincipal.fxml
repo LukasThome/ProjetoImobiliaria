@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" maxHeight="800.0" maxWidth="1200.0" minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetoimob.view.FXMLTelaPrincipalController">
+    <stylesheets>
+        <URL value="@fxmltelaprincipal.css" />
+    </stylesheets>
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="1.0" prefHeight="800.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane fx:id="apMenuEsquerdo" maxHeight="798.0" maxWidth="250.0" minHeight="798.0" minWidth="250.0" prefHeight="798.0" prefWidth="250.0">
+               <children>
+                  <VBox fx:id="vbMenuEsquerdo" layoutX="75.0" layoutY="256.0" prefHeight="798.0" prefWidth="250.0" style="-fx-background-color: #58595B;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="129.0" fitWidth="261.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icones/icone_Imob.jpg" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="60.0" top="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button fx:id="btnHome" maxHeight="70.0" maxWidth="250.0" minHeight="70.0" minWidth="250.0" mnemonicParsing="false" onAction="#abrirComHome" prefHeight="70.0" prefWidth="250.0" style="-fx-background-color: #808080;" text="Home" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font></Button>
+                        <Button fx:id="btnAtendimentos" layoutX="10.0" layoutY="279.0" maxHeight="70.0" maxWidth="250.0" minHeight="70.0" minWidth="250.0" mnemonicParsing="false" onAction="#abrirAtendimentos" prefHeight="70.0" prefWidth="250.0" style="-fx-background-color: #808080;" text="Atendimentos" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font></Button>
+                        <Button fx:id="btnAgendamentos" layoutX="10.0" layoutY="349.0" maxHeight="70.0" maxWidth="250.0" minHeight="70.0" minWidth="250.0" mnemonicParsing="false" onAction="#abrirAgendamentos" prefHeight="70.0" prefWidth="250.0" style="-fx-background-color: #808080;" text="Agendamentos" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnCadastros" layoutX="10.0" layoutY="419.0" maxHeight="70.0" maxWidth="250.0" minHeight="70.0" minWidth="250.0" mnemonicParsing="false" onAction="#abrirCadastros" prefHeight="70.0" prefWidth="250.0" style="-fx-background-color: #808080;" text="Cadastros" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnPesquisas" layoutX="10.0" layoutY="489.0" maxHeight="70.0" maxWidth="250.0" minHeight="70.0" minWidth="250.0" mnemonicParsing="false" onAction="#abrirPesquisas" prefHeight="70.0" prefWidth="250.0" style="-fx-background-color: #808080;" text="Pesquisas" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnRelatorios" layoutX="10.0" layoutY="559.0" maxHeight="70.0" maxWidth="250.0" minHeight="70.0" minWidth="250.0" mnemonicParsing="false" onAction="#abrirRelatorios" prefHeight="70.0" prefWidth="250.0" style="-fx-background-color: #808080;" text="Relatórios" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnPagamentos" layoutX="10.0" layoutY="629.0" maxHeight="70.0" maxWidth="250.0" minHeight="70.0" minWidth="250.0" mnemonicParsing="false" onAction="#abrirPagamentos" prefHeight="70.0" prefWidth="250.0" style="-fx-background-color: #808080;" text="Pagamentos" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnSair" layoutX="10.0" layoutY="560.0" maxHeight="70.0" maxWidth="250.0" minHeight="70.0" minWidth="250.0" mnemonicParsing="false" onAction="#fecharAplicacao" prefHeight="70.0" prefWidth="250.0" style="-fx-background-color: #808080;" text="Sair" textFill="#ff0707">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="apMenuDireito" maxHeight="798.0" maxWidth="940.0" minHeight="798.0" minWidth="940.0" prefHeight="798.0" prefWidth="940.0" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
